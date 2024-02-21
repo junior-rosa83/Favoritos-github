@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-primary: 'poppins', sans-serif;
+  --text-color-primary: #303030;
+
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color-primary);
+  background-color: rgb(237, 248, 250);
+}
+
+body * {
+  font-family: var(--font-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+#page {
+  max-width: 55rem;
+  margin: 2rem auto 0;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  height: 3.2rem;
+  padding: 0 .8rem;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid rgb(177, 177, 177);
+  border-right: none;
+}
+
+.search button {
+  width: 3rem;
+  border: none;
+  background: var(--primary-color);
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4rem;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--font-primary);
+}
+
+th {
+  background: var(--primary-color);
+  text-align: left;
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
+th:first-child {
+  border-top-left-radius: 6px;
+}
+
+th:last-child {
+  border-top-right-radius: 6px;
+}
+
+td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background: #bfdbee
+}
+
+tr:nth-child(even) {
+  background: #d2e7f5 
+}
+
+td.user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+td.user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+td a {
+  text-decoration: none;
+}
+
+td a p {
+  font-weight: bold;
+}
+
+td button {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: rgb(199, 1, 1);
+  cursor: pointer;
+}
